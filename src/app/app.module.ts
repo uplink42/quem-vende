@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { NavComponent } from './shared/nav/nav.component';
 
 const routes: Routes = [
     { path: '',        loadChildren: './modules/public/public.module#PublicModule' },
@@ -13,7 +14,8 @@ const routes: Routes = [
 
 @NgModule({
     declarations: [
-        AppComponent
+        AppComponent,
+        NavComponent,
     ],
     imports: [
         BrowserModule,
